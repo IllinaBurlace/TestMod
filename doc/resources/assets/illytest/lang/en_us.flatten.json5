@@ -1,0 +1,8 @@
+{
+  hexdoc: {
+    illytest: {
+      title: "TestMod Book",
+      description: "TestMod addon for Hex Casting",
+    },
+  }
+}

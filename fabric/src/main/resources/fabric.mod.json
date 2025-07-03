@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "illytest",
+  "version": "${version}",
+  "name": "TestMod",
+  "description": "TestMod addon for Hex Casting",
+  "authors": [
+    "IllinaBurlace"
+  ],
+  "contact": {
+    "homepage": "https://illinaburlace.github.io/TestMod",
+    "sources": "https://github.com/IllinaBurlace/TestMod"
+  },
+  "license": "MIT",
+  "icon": "assets/illytest/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [{
+      "adapter": "kotlin",
+      "value": "io.github.illinaburlace.illytest.fabric.FabricIllytest"
+    }],
+    "client": [{
+      "adapter": "kotlin",
+      "value": "io.github.illinaburlace.illytest.fabric.FabricIllytestClient"
+    }],
+    "modmenu": [{
+      "adapter": "kotlin",
+      "value": "io.github.illinaburlace.illytest.fabric.FabricIllytestModMenu"
+    }]
+  },
+  "mixins": [
+    "illytest-common.mixins.json",
+    "illytest-fabric.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "${versions.minecraft}",
+    "fabricloader": ">=${versions.fabric_loader}",
+    "fabric-api": ">=${versions.fabric_api}",
+    "fabric-language-kotlin": ">=${versions.kotlin_fabric}",
+    "architectury": ">=${versions.architectury}",
+    "hexcasting": ">=${versions.hexcasting_dependency}",
+    "cloth-config": ">=${versions.clothConfig}"
+  },
+  "suggests": {
+    "modmenu": ">=${versions.modMenu}"
+  }
+}

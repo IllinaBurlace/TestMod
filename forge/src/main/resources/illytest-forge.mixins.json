@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "io.github.illinaburlace.illytest.forge.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "MixinDatagenMain"
+  ],
+  "plugin": "io.github.illinaburlace.illytest.forge.mixin.ForgeMixinConfigPlugin",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
